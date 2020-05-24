@@ -1,0 +1,5 @@
+package traning.collections.maintask.Models;
+
+public enum PassengerType {
+    RENAULT_LOGAN, TOYOTA_COROLLA, VOLKSWAGEN_SHARAN, MERSEDEC_SPRINTER, RENAULT_TRAFIC, PEUGEOT_BOXER, VOLKSWAGEN_GOLF
+}
