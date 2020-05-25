@@ -1,17 +1,25 @@
 package traning.cleancode.Planes;
 
-import traning.cleancode.models.ClassificationLevel;
-import traning.cleancode.models.ExperimentalTypes;
+import traning.cleancode.Models.ClassificationLevel;
+import traning.cleancode.Models.ExperimentalTypes;
 
-public class experimentalPlane extends Plane{
+public class ExperimentalPlane extends Plane{
 
     private ExperimentalTypes type;
     private ClassificationLevel classificationLevel;
 
-    public experimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalTypes type, ClassificationLevel classificationLevel) {
+    public ExperimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalTypes type, ClassificationLevel classificationLevel) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
         this.type = type;
         this.classificationLevel = classificationLevel;
+    }
+
+    public ExperimentalTypes getType() {
+        return type;
+    }
+
+    public void setType(ExperimentalTypes type) {
+        this.type = type;
     }
 
     public ClassificationLevel getClassificationLevel(){
@@ -34,8 +42,9 @@ public class experimentalPlane extends Plane{
 
     @Override
     public String toString() {
-        return "experimentalPlane{" +
-                "model='" + model + '\'' +
+        return "ExperimentalPlane{" +
+                "type=" + type +
+                ", classificationLevel=" + classificationLevel +
                 '}';
     }
 }

@@ -1,4 +1,4 @@
-package traning.cleancode.models;
+package traning.cleancode.Models;
 
 public enum ExperimentalTypes {
     LIFTING_BODY, HYPERSONIC, HIGH_ALTITUDE, VTOL

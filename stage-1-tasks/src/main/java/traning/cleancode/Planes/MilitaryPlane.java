@@ -1,6 +1,6 @@
 package traning.cleancode.Planes;
 
-import traning.cleancode.models.MilitaryType;
+import traning.cleancode.Models.MilitaryType;
 
 import java.util.Objects;
 
@@ -17,11 +17,8 @@ public class MilitaryPlane extends Plane{
         return type;
     }
 
-    @Override
-    public String toString() {
-        return super.toString().replace("}",
-                ", type=" + type +
-                '}');
+    public void setType(MilitaryType type) {
+        this.type = type;
     }
 
     @Override
@@ -36,5 +33,12 @@ public class MilitaryPlane extends Plane{
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), type);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString().replace("}",
+                ", type=" + type +
+                        '}');
     }
 }

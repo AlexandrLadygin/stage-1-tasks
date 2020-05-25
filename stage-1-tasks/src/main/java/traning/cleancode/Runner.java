@@ -3,7 +3,7 @@ package traning.cleancode;
 import traning.cleancode.Planes.MilitaryPlane;
 import traning.cleancode.Planes.PassengerPlane;
 import traning.cleancode.Planes.Plane;
-import traning.cleancode.models.MilitaryType;
+import traning.cleancode.Models.MilitaryType;
 
 import java.util.Arrays;
 import java.util.List;
@@ -37,6 +37,7 @@ public class Runner {
                 .sortByMaxSpeed()
                 .toString());
 
-        System.out.println("Plane with max passenger capacity: " + passengerAirport.getPassengerPlaneWithMaxPassengersCapacity());
+        System.out.println("Plane with max passenger capacity: " + passengerAirport
+                .getPassengerPlaneWithMaxPassengersCapacity());
     }
 }
