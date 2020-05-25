@@ -4,7 +4,6 @@ import traning.cleancode.Models.ClassificationLevel;
 import traning.cleancode.Models.ExperimentalTypes;
 
 public class ExperimentalPlane extends Plane{
-
     private ExperimentalTypes type;
     private ClassificationLevel classificationLevel;
 
